@@ -1,0 +1,75 @@
+/* 
+  Localizable.strings
+  adblock
+
+  Created by abuharsky on 18.09.15.
+  Copyright © 2015 bukharskiy. All rights reserved.
+*/
+
+"Completed" = "Готово";
+"All filters updated" = "Фильтры обновлены";
+"Filters are not updated" = "Фильтры не обновлены";
+"Region" = "Регион";
+
+"Block Ads" = "Блокировка рекламы";
+"Block all annoying web ads, including video ads on YouTube site, Facebook ads, flashy banners, pop-ups, pop-unders and much more" = "Блокирует все навязчивую рекламу, включая рекламу на сайте YouTube, ВКонтакте, выскакивающие окна и многое другое";
+"Speed Up Your Browsing" = "Ускоряет загрузку";
+"Without annoying ads pages load up to 3x faster" = "Благодаря блокированию огромного количества рекламы, сайты будут загружаться гораздо быстрее";
+"Disable Tracking" = "Защита от слежки";
+"Now you can block hundreds of ad agencies that are tracking your every move" = "Блокирует сотни рекламных агентств, которые следят за каждым вашим шагом, когда вы используете браузер";
+"Block Malware Domains" = "Блокировка опасных доменов";
+"Blocks domains that can steal your personal information, credit card numbers, etc." = "Есть много доменов, которые различными способами воруют пароли или данные кредитных карт";
+"Ad filters are up to date" = "Фильтры рекламы обновлены";
+"Ad filters update" = "Обновление фильтров";
+"Not selected" = "Не выбран";
+"Region" = "Регион";
+"Start" = "Начать";
+"Get Started" = "Начать";
+
+"Enable Notifications" = "Включить уведомления";
+"Dismiss" = "Скрыть";
+"Open Settings" = "Перейти в \"Настройки\"";
+"App notifications must be enabled in order to receive ad filter updates.\nTo enable notifications go to device settings - App - Notifications" = "Для получения уведомлений об обновлении необходимо включить их в настройках. Для этого нужно открыть \"Настройки\" - Выбрать приложение - Включить уведомления";
+
+////////
+
+
+"Open " = "Откройте программу ";
+"\"Settings\"" = "\"Настройки\"";
+" app\nand scroll down to " = "\nи пролистайте вниз до ";
+"\"Safari\"" = "\"Safari\"";
+"Scroll down to " = "Пролистайте вниз до\n";
+"\"Content Blockers\"" = "\"Правила блокирования контента\"";
+"Switch on " = "Включите ";
+"\"Ad Block\"" = "\"Ad Block\"";
+"\nand enjoy browsing without ads!" = " и наслаждайтесь отсутствием рекламы!";
+"Close" = "Скрыть";
+
+//
+"Ad Block" = "Блокировка";
+"enabled" = "включена";
+"disabled" = "отключена";
+"FAQ" = "Инструкция";
+
+"EasyList" = "Блокировка рекламы";
+"Region Filter" = "Региональная блокировка рекламы";
+"Block tracking" = "Блокировка отслеживания";
+"Social Media Buttons" = "Блокировка кнопок соц. сетей";
+
+"The most popular list of adblock rules" = "";
+"Blocks any ad on RuAdlist Filter" = "";
+"Blocking spy software and counters" = "";
+"Blocking any social network share-buttons" = "";
+
+/// Whitelist
+"Whitelist" = "Исключения";
+"Add new rule" = "Добавить сайт";
+"Rules" = "Список сайтов";
+"For these sites the app will not activate ad blocking, tracking blocking, etc." = "Для этих сайтов все блокировки будут отключены";
+
+"New rule" = "Новое правило";
+"Edit rule" = "Изменить правило";
+"Error" = "Ошибка";
+"Please enter site name e.g. site.com" = "Пожалуйста, введите имя сайта, реклама с которого не будет блокироваться. Например, site.com";
+
+"Save" = "Сохранить";

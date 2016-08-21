@@ -1,0 +1,15 @@
+PODS:
+  - MBProgressHUD (0.9.1)
+  - zipzap (8.0.6)
+
+DEPENDENCIES:
+  - MBProgressHUD (~> 0.9.1)
+  - zipzap
+
+SPEC CHECKSUMS:
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  zipzap: 9de722cee38b7c3a8b1134913a8a67ab36cb97c1
+
+PODFILE CHECKSUM: da62476c0ef1bcbf980617163e9542471e7a5fcf
+
+COCOAPODS: 1.0.1

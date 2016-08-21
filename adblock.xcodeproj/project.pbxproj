@@ -1,0 +1,1365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		142CFF6FD02046FD49994712 /* Pods_AdBlocker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E9F1098F07748F26E7887E /* Pods_AdBlocker.framework */; };
+		1D38A8CC1BD7CFD800F36F0D /* RAMPaperSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38A8CB1BD7CFD800F36F0D /* RAMPaperSwitch.swift */; };
+		1D3FC5821BAC64EC0089597A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D3FC5841BAC64EC0089597A /* Localizable.strings */; };
+		1D5661671BA311E5007B91A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5661661BA311E5007B91A1 /* AppDelegate.swift */; };
+		1D5661691BA311E5007B91A1 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5661681BA311E5007B91A1 /* RootViewController.swift */; };
+		1D56616C1BA311E5007B91A1 /* adblock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D56616A1BA311E5007B91A1 /* adblock.storyboard */; };
+		1D5661711BA311E5007B91A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D56616F1BA311E5007B91A1 /* LaunchScreen.storyboard */; };
+		1D5661A11BA3121E007B91A1 /* contentblock.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1D5661981BA3121E007B91A1 /* contentblock.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1D5BEF331BDA86680003ABB1 /* FilterList.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA535B081BC30B94003A6A3B /* FilterList.plist */; };
+		1D5BEF341BDA86A80003ABB1 /* FilterList.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA535B081BC30B94003A6A3B /* FilterList.plist */; };
+		1D5BEF351BDA86A80003ABB1 /* EasyList.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3448E61BCE682000737784 /* EasyList.zip */; };
+		1D5BEF361BDA86A80003ABB1 /* EasyList_SocialMedia.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3448EA1BCE828200737784 /* EasyList_SocialMedia.zip */; };
+		1D5BEF371BDA86A80003ABB1 /* EasyPrivacy.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3448F11BCFFB6500737784 /* EasyPrivacy.zip */; };
+		1D5BEF381BDA86A80003ABB1 /* EasyList_Russia.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3448E81BCE827B00737784 /* EasyList_Russia.zip */; };
+		1D5BEF391BDA86A80003ABB1 /* EasyList_Indonesia.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3448F31BD0FAAB00737784 /* EasyList_Indonesia.zip */; };
+		1D5BEF3A1BDA86A80003ABB1 /* EasyList_Bulgaria.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3448F51BD111FF00737784 /* EasyList_Bulgaria.zip */; };
+		1D5BEF3B1BDA86A80003ABB1 /* EasyList_China.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3448ED1BCEB20D00737784 /* EasyList_China.zip */; };
+		1D5BEF3C1BDA86A80003ABB1 /* EasyList_Czechoslovakia.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3448F71BD1120C00737784 /* EasyList_Czechoslovakia.zip */; };
+		1D5BEF3D1BDA86A80003ABB1 /* EasyList_Dutch.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3448F91BD1122D00737784 /* EasyList_Dutch.zip */; };
+		1D5BEF3E1BDA86A80003ABB1 /* EasyList_Germany.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3448EE1BCEB20D00737784 /* EasyList_Germany.zip */; };
+		1D5BEF3F1BDA86A80003ABB1 /* EasyList_Hebrew.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3448FB1BD1127B00737784 /* EasyList_Hebrew.zip */; };
+		1D5BEF401BDA86A80003ABB1 /* EasyList_Italy.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3448FD1BD112EF00737784 /* EasyList_Italy.zip */; };
+		1D5BEF411BDA86A80003ABB1 /* EasyList_Lithuania.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3448FF1BD114DE00737784 /* EasyList_Lithuania.zip */; };
+		1D5BEF421BDA86A80003ABB1 /* EasyList_Latvia.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3449011BD1153600737784 /* EasyList_Latvia.zip */; };
+		1D5BEF431BDA86A80003ABB1 /* EasyList_Arabic.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3449031BD1157200737784 /* EasyList_Arabic.zip */; };
+		1D5BEF441BDA86A80003ABB1 /* EasyList_France.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3449051BD115F300737784 /* EasyList_France.zip */; };
+		1D5BEF451BDA86A80003ABB1 /* EasyList_Romania.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3449071BD1161B00737784 /* EasyList_Romania.zip */; };
+		1D5BEF461BDA86A80003ABB1 /* EasyList_Poland.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3449091BD11A7100737784 /* EasyList_Poland.zip */; };
+		1D5BEF471BDA86A80003ABB1 /* EasyList_Iceland.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA34490B1BD11AAB00737784 /* EasyList_Iceland.zip */; };
+		1D5BEF481BDA86A80003ABB1 /* EasyList_Spain.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA34490D1BD11B9700737784 /* EasyList_Spain.zip */; };
+		1D5BEF491BDA86A80003ABB1 /* List_Japan.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA34490F1BD11BC600737784 /* List_Japan.zip */; };
+		1D5BEF4F1BDA8A430003ABB1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D5BEF511BDA8A430003ABB1 /* InfoPlist.strings */; };
+		1D5BEF551BDA8B060003ABB1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D5BEF571BDA8B060003ABB1 /* Localizable.strings */; };
+		1D5BEF591BDA8E0B0003ABB1 /* contentblock2.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 1DAA20161BACBFB9000B1B75 /* contentblock2.entitlements */; };
+		1D5BEF5A1BDA8E150003ABB1 /* adblock2.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 1DAA20141BACBF75000B1B75 /* adblock2.entitlements */; };
+		1D74A9921BAD4B0200377CBA /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D56619C1BA3121E007B91A1 /* ActionRequestHandler.swift */; };
+		1D9ABB771BC4207B008E3603 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D9ABB791BC4207B008E3603 /* InfoPlist.strings */; };
+		1DAA1FE71BACBC6E000B1B75 /* DismissSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFCDCDC1BAB627C0066F36F /* DismissSegue.swift */; };
+		1DAA1FE81BACBC6E000B1B75 /* InstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFCDCE11BAB66F50066F36F /* InstructionViewController.swift */; };
+		1DAA1FEA1BACBC6E000B1B75 /* PresentWithoutAnimationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFCDCDF1BAB63940066F36F /* PresentWithoutAnimationSegue.swift */; };
+		1DAA1FEB1BACBC6E000B1B75 /* InstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFCDCE31BAB699E0066F36F /* InstructionView.swift */; };
+		1DAA1FED1BACBC6E000B1B75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5661661BA311E5007B91A1 /* AppDelegate.swift */; };
+		1DAA1FF01BACBC6E000B1B75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D56616F1BA311E5007B91A1 /* LaunchScreen.storyboard */; };
+		1DAA20091BACBD00000B1B75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DAA20081BACBD00000B1B75 /* Assets.xcassets */; };
+		1DAA200A1BACBD06000B1B75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D56616D1BA311E5007B91A1 /* Assets.xcassets */; };
+		1DAA200B1BACBE19000B1B75 /* contentblock2.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1DAA20051BACBC90000B1B75 /* contentblock2.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1DAA20131BACBF36000B1B75 /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAA20121BACBF36000B1B75 /* ActionRequestHandler.swift */; };
+		1DFCDCDD1BAB627C0066F36F /* DismissSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFCDCDC1BAB627C0066F36F /* DismissSegue.swift */; };
+		1DFCDCE01BAB63940066F36F /* PresentWithoutAnimationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFCDCDF1BAB63940066F36F /* PresentWithoutAnimationSegue.swift */; };
+		1DFCDCE21BAB66F50066F36F /* InstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFCDCE11BAB66F50066F36F /* InstructionViewController.swift */; };
+		1DFCDCE41BAB699E0066F36F /* InstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFCDCE31BAB699E0066F36F /* InstructionView.swift */; };
+		5AB301FFAF9F09F4FD202737 /* Pods_contentblock2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20016A7DEEB35C745505AFC6 /* Pods_contentblock2.framework */; };
+		7795E71C298B3A82967C3C87 /* Pods_adblock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27CB6B42B003126CF3355C74 /* Pods_adblock.framework */; };
+		D9B9FD231BBEF3B900296BF0 /* FilterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B9FD221BBEF3B900296BF0 /* FilterList.swift */; };
+		D9B9FD241BBEF3B900296BF0 /* FilterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B9FD221BBEF3B900296BF0 /* FilterList.swift */; };
+		EA0812811BBF1D5D001904E9 /* FilterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B9FD221BBEF3B900296BF0 /* FilterList.swift */; };
+		EA3448E41BCD5BB800737784 /* RegionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3448E31BCD5BB800737784 /* RegionsViewController.swift */; };
+		EA3448E71BCE682000737784 /* EasyList.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3448E61BCE682000737784 /* EasyList.zip */; };
+		EA3448E91BCE827B00737784 /* EasyList_Russia.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3448E81BCE827B00737784 /* EasyList_Russia.zip */; };
+		EA3448EB1BCE828200737784 /* EasyList_SocialMedia.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3448EA1BCE828200737784 /* EasyList_SocialMedia.zip */; };
+		EA3448EF1BCEB20D00737784 /* EasyList_China.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3448ED1BCEB20D00737784 /* EasyList_China.zip */; };
+		EA3448F01BCEB20D00737784 /* EasyList_Germany.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3448EE1BCEB20D00737784 /* EasyList_Germany.zip */; };
+		EA3448F21BCFFB6500737784 /* EasyPrivacy.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3448F11BCFFB6500737784 /* EasyPrivacy.zip */; };
+		EA3448F41BD0FAAB00737784 /* EasyList_Indonesia.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3448F31BD0FAAB00737784 /* EasyList_Indonesia.zip */; };
+		EA3448F61BD111FF00737784 /* EasyList_Bulgaria.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3448F51BD111FF00737784 /* EasyList_Bulgaria.zip */; };
+		EA3448F81BD1120C00737784 /* EasyList_Czechoslovakia.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3448F71BD1120C00737784 /* EasyList_Czechoslovakia.zip */; };
+		EA3448FA1BD1122D00737784 /* EasyList_Dutch.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3448F91BD1122D00737784 /* EasyList_Dutch.zip */; };
+		EA3448FC1BD1127B00737784 /* EasyList_Hebrew.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3448FB1BD1127B00737784 /* EasyList_Hebrew.zip */; };
+		EA3448FE1BD112EF00737784 /* EasyList_Italy.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3448FD1BD112EF00737784 /* EasyList_Italy.zip */; };
+		EA3449001BD114DE00737784 /* EasyList_Lithuania.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3448FF1BD114DE00737784 /* EasyList_Lithuania.zip */; };
+		EA3449021BD1153600737784 /* EasyList_Latvia.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3449011BD1153600737784 /* EasyList_Latvia.zip */; };
+		EA3449041BD1157200737784 /* EasyList_Arabic.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3449031BD1157200737784 /* EasyList_Arabic.zip */; };
+		EA3449061BD115F300737784 /* EasyList_France.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3449051BD115F300737784 /* EasyList_France.zip */; };
+		EA3449081BD1161B00737784 /* EasyList_Romania.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3449071BD1161B00737784 /* EasyList_Romania.zip */; };
+		EA34490A1BD11A7100737784 /* EasyList_Poland.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA3449091BD11A7100737784 /* EasyList_Poland.zip */; };
+		EA34490C1BD11AAB00737784 /* EasyList_Iceland.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA34490B1BD11AAB00737784 /* EasyList_Iceland.zip */; };
+		EA34490E1BD11B9700737784 /* EasyList_Spain.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA34490D1BD11B9700737784 /* EasyList_Spain.zip */; };
+		EA3449101BD11BC600737784 /* List_Japan.zip in Resources */ = {isa = PBXBuildFile; fileRef = EA34490F1BD11BC600737784 /* List_Japan.zip */; };
+		EA535B091BC30B94003A6A3B /* FilterList.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA535B081BC30B94003A6A3B /* FilterList.plist */; };
+		EA63591B1BD9346200843BCE /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5661681BA311E5007B91A1 /* RootViewController.swift */; };
+		EA63591C1BD9346C00843BCE /* RAMPaperSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38A8CB1BD7CFD800F36F0D /* RAMPaperSwitch.swift */; };
+		EA6359211BD93BBD00843BCE /* FilterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B9FD221BBEF3B900296BF0 /* FilterList.swift */; };
+		EA6359221BD93BC600843BCE /* FilterListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA85C5261BBE8949005C9F8D /* FilterListManager.swift */; };
+		EA6359231BD93BCC00843BCE /* RegionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3448E31BCD5BB800737784 /* RegionsViewController.swift */; };
+		EA6359241BD93BD100843BCE /* WhitelistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76C11E1BC3FA5000975F08 /* WhitelistViewController.swift */; };
+		EA6359251BD93BD300843BCE /* WhitelistRuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6DBC81BC6820400A3D66A /* WhitelistRuleViewController.swift */; };
+		EA76C11F1BC3FA5000975F08 /* WhitelistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76C11E1BC3FA5000975F08 /* WhitelistViewController.swift */; };
+		EA85C5271BBE8949005C9F8D /* FilterListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA85C5261BBE8949005C9F8D /* FilterListManager.swift */; };
+		EA85C5281BBE8949005C9F8D /* FilterListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA85C5261BBE8949005C9F8D /* FilterListManager.swift */; };
+		EAC6DBC91BC6820400A3D66A /* WhitelistRuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6DBC81BC6820400A3D66A /* WhitelistRuleViewController.swift */; };
+		EAD1E2C51BDA499E0093DB38 /* FeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1E2C41BDA499E0093DB38 /* FeaturesViewController.swift */; };
+		EAD1E2C61BDA499E0093DB38 /* FeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1E2C41BDA499E0093DB38 /* FeaturesViewController.swift */; };
+		EAD1E2C81BDA49B50093DB38 /* FeatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1E2C71BDA49B50093DB38 /* FeatureCell.swift */; };
+		EAD1E2C91BDA49B50093DB38 /* FeatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1E2C71BDA49B50093DB38 /* FeatureCell.swift */; };
+		EAD1E2CA1BDA53B00093DB38 /* FilterListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA85C5261BBE8949005C9F8D /* FilterListManager.swift */; };
+		EAD1E2CE1BDA67AD0093DB38 /* adblock2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAD1E2CB1BDA67AD0093DB38 /* adblock2.storyboard */; };
+		EAF2F7011BC7C28400E323B3 /* FilterList.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA535B081BC30B94003A6A3B /* FilterList.plist */; };
+		F606E2BD0B9D284B9D3B8598 /* Pods_contentblock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6090AF9C14E4D47F71E456 /* Pods_contentblock.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1D56619F1BA3121E007B91A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D56615B1BA311E5007B91A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D5661971BA3121E007B91A1;
+			remoteInfo = contentblock;
+		};
+		1DAA200C1BACBE19000B1B75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D56615B1BA311E5007B91A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DAA1FFB1BACBC90000B1B75;
+			remoteInfo = contentblock2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1D5661A51BA3121E007B91A1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1D5661A11BA3121E007B91A1 /* contentblock.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DAA200E1BACBE19000B1B75 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1DAA200B1BACBE19000B1B75 /* contentblock2.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		06F60A5FF375BA914A083CCE /* Pods-adblock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-adblock.release.xcconfig"; path = "Pods/Target Support Files/Pods-adblock/Pods-adblock.release.xcconfig"; sourceTree = "<group>"; };
+		098AA5B24B060CE2F05410DE /* Pods-contentblock2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-contentblock2.release.xcconfig"; path = "Pods/Target Support Files/Pods-contentblock2/Pods-contentblock2.release.xcconfig"; sourceTree = "<group>"; };
+		0B14A86A5F6A6229F4C51A6F /* Pods-adblock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-adblock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-adblock/Pods-adblock.debug.xcconfig"; sourceTree = "<group>"; };
+		18D1E7140665401438A04C82 /* Pods-AdBlocker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdBlocker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdBlocker/Pods-AdBlocker.debug.xcconfig"; sourceTree = "<group>"; };
+		1D31FCE51BA6F071000CA990 /* contentblock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = contentblock.entitlements; sourceTree = "<group>"; };
+		1D38A8CB1BD7CFD800F36F0D /* RAMPaperSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMPaperSwitch.swift; sourceTree = "<group>"; };
+		1D3FC5861BAC650F0089597A /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		1D3FC5871BAC650F0089597A /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1D44C1A61BA6E7A800415235 /* adblock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = adblock.entitlements; sourceTree = "<group>"; };
+		1D5661631BA311E5007B91A1 /* adblock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = adblock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D5661661BA311E5007B91A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1D5661681BA311E5007B91A1 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		1D56616D1BA311E5007B91A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D5661701BA311E5007B91A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1D5661721BA311E5007B91A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D5661981BA3121E007B91A1 /* contentblock.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = contentblock.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D56619C1BA3121E007B91A1 /* ActionRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRequestHandler.swift; sourceTree = "<group>"; };
+		1D56619E1BA3121E007B91A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D5BEF501BDA8A430003ABB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1D5BEF521BDA8A450003ABB1 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1D5BEF561BDA8B060003ABB1 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1D5BEF581BDA8B090003ABB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1D74A9891BAD454500377CBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		1D74A98E1BAD47C200377CBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/adblock.storyboard; sourceTree = "<group>"; };
+		1D74A9911BAD483600377CBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1D9ABB781BC4207B008E3603 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1D9ABB7B1BC4207F008E3603 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1DAA1FF91BACBC6E000B1B75 /* AdBlocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdBlocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DAA1FFA1BACBC6E000B1B75 /* adblock copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "adblock copy-Info.plist"; path = "/Users/abuharsky/Documents/XCode projects/adblock/adblock copy-Info.plist"; sourceTree = "<absolute>"; };
+		1DAA20051BACBC90000B1B75 /* contentblock2.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = contentblock2.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DAA20061BACBC90000B1B75 /* contentblock copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "contentblock copy-Info.plist"; path = "/Users/abuharsky/Documents/XCode projects/adblock/contentblock copy-Info.plist"; sourceTree = "<absolute>"; };
+		1DAA20081BACBD00000B1B75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = adblock/adblocker2/Assets.xcassets; sourceTree = "<group>"; };
+		1DAA20121BACBF36000B1B75 /* ActionRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActionRequestHandler.swift; path = contentblock/contentblock2/ActionRequestHandler.swift; sourceTree = "<group>"; };
+		1DAA20141BACBF75000B1B75 /* adblock2.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = adblock2.entitlements; path = adblock/adblocker2/adblock2.entitlements; sourceTree = "<group>"; };
+		1DAA20161BACBFB9000B1B75 /* contentblock2.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = contentblock2.entitlements; path = contentblock/contentblock2/contentblock2.entitlements; sourceTree = "<group>"; };
+		1DFCDCDC1BAB627C0066F36F /* DismissSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissSegue.swift; sourceTree = "<group>"; };
+		1DFCDCDF1BAB63940066F36F /* PresentWithoutAnimationSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentWithoutAnimationSegue.swift; sourceTree = "<group>"; };
+		1DFCDCE11BAB66F50066F36F /* InstructionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionViewController.swift; sourceTree = "<group>"; };
+		1DFCDCE31BAB699E0066F36F /* InstructionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionView.swift; sourceTree = "<group>"; };
+		20016A7DEEB35C745505AFC6 /* Pods_contentblock2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_contentblock2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27CB6B42B003126CF3355C74 /* Pods_adblock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_adblock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29E9F1098F07748F26E7887E /* Pods_AdBlocker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdBlocker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F6090AF9C14E4D47F71E456 /* Pods_contentblock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_contentblock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45936C9D3AFD0A76E4FEC399 /* Pods-AdBlocker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdBlocker.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdBlocker/Pods-AdBlocker.release.xcconfig"; sourceTree = "<group>"; };
+		872A55EF8EE7EF70F35F0081 /* Pods-contentblock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-contentblock.release.xcconfig"; path = "Pods/Target Support Files/Pods-contentblock/Pods-contentblock.release.xcconfig"; sourceTree = "<group>"; };
+		9915D14F2DAAB6C79D17718A /* Pods-contentblock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-contentblock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-contentblock/Pods-contentblock.debug.xcconfig"; sourceTree = "<group>"; };
+		B0CE85C48853AE8B062A2AA0 /* Pods-contentblock2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-contentblock2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-contentblock2/Pods-contentblock2.debug.xcconfig"; sourceTree = "<group>"; };
+		D9B9FD221BBEF3B900296BF0 /* FilterList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterList.swift; sourceTree = "<group>"; };
+		EA3448E31BCD5BB800737784 /* RegionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionsViewController.swift; sourceTree = "<group>"; };
+		EA3448E61BCE682000737784 /* EasyList.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = EasyList.zip; sourceTree = "<group>"; };
+		EA3448E81BCE827B00737784 /* EasyList_Russia.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = EasyList_Russia.zip; sourceTree = "<group>"; };
+		EA3448EA1BCE828200737784 /* EasyList_SocialMedia.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = EasyList_SocialMedia.zip; sourceTree = "<group>"; };
+		EA3448ED1BCEB20D00737784 /* EasyList_China.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = EasyList_China.zip; sourceTree = "<group>"; };
+		EA3448EE1BCEB20D00737784 /* EasyList_Germany.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = EasyList_Germany.zip; sourceTree = "<group>"; };
+		EA3448F11BCFFB6500737784 /* EasyPrivacy.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = EasyPrivacy.zip; sourceTree = "<group>"; };
+		EA3448F31BD0FAAB00737784 /* EasyList_Indonesia.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = EasyList_Indonesia.zip; sourceTree = "<group>"; };
+		EA3448F51BD111FF00737784 /* EasyList_Bulgaria.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = EasyList_Bulgaria.zip; sourceTree = "<group>"; };
+		EA3448F71BD1120C00737784 /* EasyList_Czechoslovakia.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = EasyList_Czechoslovakia.zip; sourceTree = "<group>"; };
+		EA3448F91BD1122D00737784 /* EasyList_Dutch.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = EasyList_Dutch.zip; sourceTree = "<group>"; };
+		EA3448FB1BD1127B00737784 /* EasyList_Hebrew.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = EasyList_Hebrew.zip; sourceTree = "<group>"; };
+		EA3448FD1BD112EF00737784 /* EasyList_Italy.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = EasyList_Italy.zip; sourceTree = "<group>"; };
+		EA3448FF1BD114DE00737784 /* EasyList_Lithuania.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = EasyList_Lithuania.zip; sourceTree = "<group>"; };
+		EA3449011BD1153600737784 /* EasyList_Latvia.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = EasyList_Latvia.zip; sourceTree = "<group>"; };
+		EA3449031BD1157200737784 /* EasyList_Arabic.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = EasyList_Arabic.zip; sourceTree = "<group>"; };
+		EA3449051BD115F300737784 /* EasyList_France.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = EasyList_France.zip; sourceTree = "<group>"; };
+		EA3449071BD1161B00737784 /* EasyList_Romania.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = EasyList_Romania.zip; sourceTree = "<group>"; };
+		EA3449091BD11A7100737784 /* EasyList_Poland.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = EasyList_Poland.zip; sourceTree = "<group>"; };
+		EA34490B1BD11AAB00737784 /* EasyList_Iceland.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = EasyList_Iceland.zip; sourceTree = "<group>"; };
+		EA34490D1BD11B9700737784 /* EasyList_Spain.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = EasyList_Spain.zip; sourceTree = "<group>"; };
+		EA34490F1BD11BC600737784 /* List_Japan.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = List_Japan.zip; sourceTree = "<group>"; };
+		EA3449131BD14EFE00737784 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		EA3449171BD14FE500737784 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA3449181BD1517000737784 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA3449191BD1518000737784 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA34491E1BD151F600737784 /* lt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lt; path = lt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA34491F1BD1520A00737784 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA3449201BD1522500737784 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA3449211BD1528100737784 /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA3449221BD152A100737784 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA3449231BD152CA00737784 /* is */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = is; path = is.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA3449241BD152DB00737784 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA3449251BD152E400737784 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA3449261BD152F600737784 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA3449271BD1538100737784 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA3449281BD153B400737784 /* bg */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bg; path = bg.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA535B081BC30B94003A6A3B /* FilterList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FilterList.plist; sourceTree = "<group>"; };
+		EA63591D1BD93B8F00843BCE /* zipzap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = zipzap.framework; path = "Pods/../build/Debug-iphoneos/zipzap.framework"; sourceTree = "<group>"; };
+		EA6359271BD93BFA00843BCE /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBProgressHUD.framework; path = "Pods/../build/Debug-iphoneos/MBProgressHUD.framework"; sourceTree = "<group>"; };
+		EA76C11E1BC3FA5000975F08 /* WhitelistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhitelistViewController.swift; sourceTree = "<group>"; };
+		EA85C5261BBE8949005C9F8D /* FilterListManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterListManager.swift; sourceTree = "<group>"; };
+		EAC6DBC81BC6820400A3D66A /* WhitelistRuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhitelistRuleViewController.swift; sourceTree = "<group>"; };
+		EAD1E2C41BDA499E0093DB38 /* FeaturesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturesViewController.swift; sourceTree = "<group>"; };
+		EAD1E2C71BDA49B50093DB38 /* FeatureCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureCell.swift; sourceTree = "<group>"; };
+		EAD1E2CC1BDA67AD0093DB38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = adblock/Base.lproj/adblock2.storyboard; sourceTree = "<group>"; };
+		EAF2F7211BC7D79900E323B3 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D5661601BA311E5007B91A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7795E71C298B3A82967C3C87 /* Pods_adblock.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D5661951BA3121E007B91A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F606E2BD0B9D284B9D3B8598 /* Pods_contentblock.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DAA1FEE1BACBC6E000B1B75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				142CFF6FD02046FD49994712 /* Pods_AdBlocker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DAA1FFE1BACBC90000B1B75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AB301FFAF9F09F4FD202737 /* Pods_contentblock2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D56615A1BA311E5007B91A1 = {
+			isa = PBXGroup;
+			children = (
+				1D5661651BA311E5007B91A1 /* adblock */,
+				1D5661991BA3121E007B91A1 /* contentblock */,
+				1DAA20071BACBCD5000B1B75 /* adblock2 */,
+				1DAA20111BACBF25000B1B75 /* contentblock2 */,
+				EAF2F7201BC7D79900E323B3 /* Frameworks */,
+				1D5661641BA311E5007B91A1 /* Products */,
+				55430A7A24BBAE3389C9C7B2 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		1D5661641BA311E5007B91A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D5661631BA311E5007B91A1 /* adblock.app */,
+				1D5661981BA3121E007B91A1 /* contentblock.appex */,
+				1DAA1FF91BACBC6E000B1B75 /* AdBlocker.app */,
+				1DAA20051BACBC90000B1B75 /* contentblock2.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D5661651BA311E5007B91A1 /* adblock */ = {
+			isa = PBXGroup;
+			children = (
+				1D5661661BA311E5007B91A1 /* AppDelegate.swift */,
+				1D5661681BA311E5007B91A1 /* RootViewController.swift */,
+				EA85C5261BBE8949005C9F8D /* FilterListManager.swift */,
+				D9B9FD221BBEF3B900296BF0 /* FilterList.swift */,
+				EA3448E31BCD5BB800737784 /* RegionsViewController.swift */,
+				EAC6DBCA1BC6973700A3D66A /* Whitelist */,
+				1D9ABB7D1BC423F7008E3603 /* Other UI */,
+				1D9ABB7C1BC423CC008E3603 /* Resources */,
+				EA76C1131BC3F2AC00975F08 /* FilterLists */,
+			);
+			path = adblock;
+			sourceTree = "<group>";
+		};
+		1D5661991BA3121E007B91A1 /* contentblock */ = {
+			isa = PBXGroup;
+			children = (
+				1D31FCE51BA6F071000CA990 /* contentblock.entitlements */,
+				1D56619C1BA3121E007B91A1 /* ActionRequestHandler.swift */,
+				1D56619E1BA3121E007B91A1 /* Info.plist */,
+			);
+			path = contentblock;
+			sourceTree = "<group>";
+		};
+		1D9ABB7C1BC423CC008E3603 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1D44C1A61BA6E7A800415235 /* adblock.entitlements */,
+				1D56616A1BA311E5007B91A1 /* adblock.storyboard */,
+				1D56616F1BA311E5007B91A1 /* LaunchScreen.storyboard */,
+				1D56616D1BA311E5007B91A1 /* Assets.xcassets */,
+				1D3FC5841BAC64EC0089597A /* Localizable.strings */,
+				EA535B081BC30B94003A6A3B /* FilterList.plist */,
+				1D5661721BA311E5007B91A1 /* Info.plist */,
+				1D9ABB791BC4207B008E3603 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1D9ABB7D1BC423F7008E3603 /* Other UI */ = {
+			isa = PBXGroup;
+			children = (
+				1D38A8CB1BD7CFD800F36F0D /* RAMPaperSwitch.swift */,
+				1DFCDCE11BAB66F50066F36F /* InstructionViewController.swift */,
+				EAD1E2C41BDA499E0093DB38 /* FeaturesViewController.swift */,
+				EAD1E2C71BDA49B50093DB38 /* FeatureCell.swift */,
+				1DFCDCE31BAB699E0066F36F /* InstructionView.swift */,
+				1DFCDCDC1BAB627C0066F36F /* DismissSegue.swift */,
+				1DFCDCDF1BAB63940066F36F /* PresentWithoutAnimationSegue.swift */,
+			);
+			name = "Other UI";
+			sourceTree = "<group>";
+		};
+		1DAA20071BACBCD5000B1B75 /* adblock2 */ = {
+			isa = PBXGroup;
+			children = (
+				1D5BEF571BDA8B060003ABB1 /* Localizable.strings */,
+				1D5BEF511BDA8A430003ABB1 /* InfoPlist.strings */,
+				1DAA1FFA1BACBC6E000B1B75 /* adblock copy-Info.plist */,
+				EAD1E2CB1BDA67AD0093DB38 /* adblock2.storyboard */,
+				1DAA20141BACBF75000B1B75 /* adblock2.entitlements */,
+				1DAA20081BACBD00000B1B75 /* Assets.xcassets */,
+			);
+			name = adblock2;
+			sourceTree = "<group>";
+		};
+		1DAA20111BACBF25000B1B75 /* contentblock2 */ = {
+			isa = PBXGroup;
+			children = (
+				1DAA20061BACBC90000B1B75 /* contentblock copy-Info.plist */,
+				1DAA20161BACBFB9000B1B75 /* contentblock2.entitlements */,
+				1DAA20121BACBF36000B1B75 /* ActionRequestHandler.swift */,
+			);
+			name = contentblock2;
+			sourceTree = "<group>";
+		};
+		55430A7A24BBAE3389C9C7B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18D1E7140665401438A04C82 /* Pods-AdBlocker.debug.xcconfig */,
+				45936C9D3AFD0A76E4FEC399 /* Pods-AdBlocker.release.xcconfig */,
+				0B14A86A5F6A6229F4C51A6F /* Pods-adblock.debug.xcconfig */,
+				06F60A5FF375BA914A083CCE /* Pods-adblock.release.xcconfig */,
+				9915D14F2DAAB6C79D17718A /* Pods-contentblock.debug.xcconfig */,
+				872A55EF8EE7EF70F35F0081 /* Pods-contentblock.release.xcconfig */,
+				B0CE85C48853AE8B062A2AA0 /* Pods-contentblock2.debug.xcconfig */,
+				098AA5B24B060CE2F05410DE /* Pods-contentblock2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EA3448EC1BCE84ED00737784 /* regional */ = {
+			isa = PBXGroup;
+			children = (
+				EA3448E81BCE827B00737784 /* EasyList_Russia.zip */,
+				EA3448F31BD0FAAB00737784 /* EasyList_Indonesia.zip */,
+				EA3448F51BD111FF00737784 /* EasyList_Bulgaria.zip */,
+				EA3448ED1BCEB20D00737784 /* EasyList_China.zip */,
+				EA3448F71BD1120C00737784 /* EasyList_Czechoslovakia.zip */,
+				EA3448F91BD1122D00737784 /* EasyList_Dutch.zip */,
+				EA3448EE1BCEB20D00737784 /* EasyList_Germany.zip */,
+				EA3448FB1BD1127B00737784 /* EasyList_Hebrew.zip */,
+				EA3448FD1BD112EF00737784 /* EasyList_Italy.zip */,
+				EA3448FF1BD114DE00737784 /* EasyList_Lithuania.zip */,
+				EA3449011BD1153600737784 /* EasyList_Latvia.zip */,
+				EA3449031BD1157200737784 /* EasyList_Arabic.zip */,
+				EA3449051BD115F300737784 /* EasyList_France.zip */,
+				EA3449071BD1161B00737784 /* EasyList_Romania.zip */,
+				EA3449091BD11A7100737784 /* EasyList_Poland.zip */,
+				EA34490B1BD11AAB00737784 /* EasyList_Iceland.zip */,
+				EA34490D1BD11B9700737784 /* EasyList_Spain.zip */,
+				EA34490F1BD11BC600737784 /* List_Japan.zip */,
+			);
+			name = regional;
+			sourceTree = "<group>";
+		};
+		EA76C1131BC3F2AC00975F08 /* FilterLists */ = {
+			isa = PBXGroup;
+			children = (
+				EA3448E61BCE682000737784 /* EasyList.zip */,
+				EA3448EA1BCE828200737784 /* EasyList_SocialMedia.zip */,
+				EA3448F11BCFFB6500737784 /* EasyPrivacy.zip */,
+				EA3448EC1BCE84ED00737784 /* regional */,
+			);
+			name = FilterLists;
+			path = ../contentblock;
+			sourceTree = "<group>";
+		};
+		EAC6DBCA1BC6973700A3D66A /* Whitelist */ = {
+			isa = PBXGroup;
+			children = (
+				EA76C11E1BC3FA5000975F08 /* WhitelistViewController.swift */,
+				EAC6DBC81BC6820400A3D66A /* WhitelistRuleViewController.swift */,
+			);
+			name = Whitelist;
+			sourceTree = "<group>";
+		};
+		EAF2F7201BC7D79900E323B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA6359271BD93BFA00843BCE /* MBProgressHUD.framework */,
+				EA63591D1BD93B8F00843BCE /* zipzap.framework */,
+				EAF2F7211BC7D79900E323B3 /* NotificationCenter.framework */,
+				29E9F1098F07748F26E7887E /* Pods_AdBlocker.framework */,
+				27CB6B42B003126CF3355C74 /* Pods_adblock.framework */,
+				2F6090AF9C14E4D47F71E456 /* Pods_contentblock.framework */,
+				20016A7DEEB35C745505AFC6 /* Pods_contentblock2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D5661621BA311E5007B91A1 /* adblock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D56618B1BA311E5007B91A1 /* Build configuration list for PBXNativeTarget "adblock" */;
+			buildPhases = (
+				15A7A7B2242FF7375B580EF0 /* [CP] Check Pods Manifest.lock */,
+				1D56615F1BA311E5007B91A1 /* Sources */,
+				1D5661601BA311E5007B91A1 /* Frameworks */,
+				1D5661611BA311E5007B91A1 /* Resources */,
+				1D5661A51BA3121E007B91A1 /* Embed App Extensions */,
+				4B10A70C78A0D709ADE0F0DA /* [CP] Embed Pods Frameworks */,
+				9CD29FD07779CA0A3A481CDC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D5661A01BA3121E007B91A1 /* PBXTargetDependency */,
+			);
+			name = adblock;
+			productName = adblock;
+			productReference = 1D5661631BA311E5007B91A1 /* adblock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1D5661971BA3121E007B91A1 /* contentblock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D5661A21BA3121E007B91A1 /* Build configuration list for PBXNativeTarget "contentblock" */;
+			buildPhases = (
+				13497A2D4D6A895D1AEF9DC6 /* [CP] Check Pods Manifest.lock */,
+				1D5661941BA3121E007B91A1 /* Sources */,
+				1D5661951BA3121E007B91A1 /* Frameworks */,
+				1D5661961BA3121E007B91A1 /* Resources */,
+				B42B9124DBABAE82AB16DC63 /* [CP] Embed Pods Frameworks */,
+				6E4903C45F480FD5FD8A38AF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = contentblock;
+			productName = contentblock;
+			productReference = 1D5661981BA3121E007B91A1 /* contentblock.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		1DAA1FE21BACBC6E000B1B75 /* AdBlocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DAA1FF61BACBC6E000B1B75 /* Build configuration list for PBXNativeTarget "AdBlocker" */;
+			buildPhases = (
+				314911744B7321051ADC821C /* [CP] Check Pods Manifest.lock */,
+				1DAA1FE51BACBC6E000B1B75 /* Sources */,
+				1DAA1FEE1BACBC6E000B1B75 /* Frameworks */,
+				1DAA1FEF1BACBC6E000B1B75 /* Resources */,
+				1DAA200E1BACBE19000B1B75 /* Embed App Extensions */,
+				CDB6965698B7FA2023D23FB2 /* [CP] Embed Pods Frameworks */,
+				BEF3C731F2F822C0C0E6C695 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DAA200D1BACBE19000B1B75 /* PBXTargetDependency */,
+			);
+			name = AdBlocker;
+			productName = adblock;
+			productReference = 1DAA1FF91BACBC6E000B1B75 /* AdBlocker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1DAA1FFB1BACBC90000B1B75 /* contentblock2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DAA20021BACBC90000B1B75 /* Build configuration list for PBXNativeTarget "contentblock2" */;
+			buildPhases = (
+				7B276B3F73A86D332C584FCB /* [CP] Check Pods Manifest.lock */,
+				1DAA1FFC1BACBC90000B1B75 /* Sources */,
+				1DAA1FFE1BACBC90000B1B75 /* Frameworks */,
+				1DAA1FFF1BACBC90000B1B75 /* Resources */,
+				6537A6AE0220C9FE7A531FB3 /* [CP] Embed Pods Frameworks */,
+				FE0CD59E3D7ED22A5EA69303 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = contentblock2;
+			productName = contentblock;
+			productReference = 1DAA20051BACBC90000B1B75 /* contentblock2.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D56615B1BA311E5007B91A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = bukharskiy;
+				TargetAttributes = {
+					1D5661621BA311E5007B91A1 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = E6NP5CG2G4;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					1D5661971BA3121E007B91A1 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = E6NP5CG2G4;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					1DAA1FE21BACBC6E000B1B75 = {
+						DevelopmentTeam = 57YACG92AG;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					1DAA1FFB1BACBC90000B1B75 = {
+						DevelopmentTeam = 57YACG92AG;
+					};
+				};
+			};
+			buildConfigurationList = 1D56615E1BA311E5007B91A1 /* Build configuration list for PBXProject "adblock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+				"zh-Hans",
+				he,
+				cs,
+				nl,
+				lt,
+				ar,
+				fr,
+				ro,
+				pl,
+				is,
+				es,
+				ja,
+				sk,
+				id,
+				bg,
+			);
+			mainGroup = 1D56615A1BA311E5007B91A1;
+			productRefGroup = 1D5661641BA311E5007B91A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D5661621BA311E5007B91A1 /* adblock */,
+				1D5661971BA3121E007B91A1 /* contentblock */,
+				1DAA1FE21BACBC6E000B1B75 /* AdBlocker */,
+				1DAA1FFB1BACBC90000B1B75 /* contentblock2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D5661611BA311E5007B91A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA3448E91BCE827B00737784 /* EasyList_Russia.zip in Resources */,
+				1D5661711BA311E5007B91A1 /* LaunchScreen.storyboard in Resources */,
+				EA3448F61BD111FF00737784 /* EasyList_Bulgaria.zip in Resources */,
+				EA34490E1BD11B9700737784 /* EasyList_Spain.zip in Resources */,
+				EA3448F81BD1120C00737784 /* EasyList_Czechoslovakia.zip in Resources */,
+				EA3449081BD1161B00737784 /* EasyList_Romania.zip in Resources */,
+				1D9ABB771BC4207B008E3603 /* InfoPlist.strings in Resources */,
+				EA3448EF1BCEB20D00737784 /* EasyList_China.zip in Resources */,
+				EA3449021BD1153600737784 /* EasyList_Latvia.zip in Resources */,
+				EA34490C1BD11AAB00737784 /* EasyList_Iceland.zip in Resources */,
+				EA3449001BD114DE00737784 /* EasyList_Lithuania.zip in Resources */,
+				1D3FC5821BAC64EC0089597A /* Localizable.strings in Resources */,
+				EA3448F41BD0FAAB00737784 /* EasyList_Indonesia.zip in Resources */,
+				EA3448FA1BD1122D00737784 /* EasyList_Dutch.zip in Resources */,
+				1DAA200A1BACBD06000B1B75 /* Assets.xcassets in Resources */,
+				EA535B091BC30B94003A6A3B /* FilterList.plist in Resources */,
+				EA3448E71BCE682000737784 /* EasyList.zip in Resources */,
+				EA3449101BD11BC600737784 /* List_Japan.zip in Resources */,
+				EA34490A1BD11A7100737784 /* EasyList_Poland.zip in Resources */,
+				EA3448FC1BD1127B00737784 /* EasyList_Hebrew.zip in Resources */,
+				EA3448F21BCFFB6500737784 /* EasyPrivacy.zip in Resources */,
+				EA3449061BD115F300737784 /* EasyList_France.zip in Resources */,
+				EA3449041BD1157200737784 /* EasyList_Arabic.zip in Resources */,
+				EA3448F01BCEB20D00737784 /* EasyList_Germany.zip in Resources */,
+				EA3448FE1BD112EF00737784 /* EasyList_Italy.zip in Resources */,
+				EA3448EB1BCE828200737784 /* EasyList_SocialMedia.zip in Resources */,
+				1D56616C1BA311E5007B91A1 /* adblock.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D5661961BA3121E007B91A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAF2F7011BC7C28400E323B3 /* FilterList.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DAA1FEF1BACBC6E000B1B75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D5BEF5A1BDA8E150003ABB1 /* adblock2.entitlements in Resources */,
+				1D5BEF341BDA86A80003ABB1 /* FilterList.plist in Resources */,
+				1D5BEF351BDA86A80003ABB1 /* EasyList.zip in Resources */,
+				1D5BEF361BDA86A80003ABB1 /* EasyList_SocialMedia.zip in Resources */,
+				1D5BEF371BDA86A80003ABB1 /* EasyPrivacy.zip in Resources */,
+				1D5BEF381BDA86A80003ABB1 /* EasyList_Russia.zip in Resources */,
+				1D5BEF391BDA86A80003ABB1 /* EasyList_Indonesia.zip in Resources */,
+				1D5BEF3A1BDA86A80003ABB1 /* EasyList_Bulgaria.zip in Resources */,
+				1D5BEF3B1BDA86A80003ABB1 /* EasyList_China.zip in Resources */,
+				1D5BEF3C1BDA86A80003ABB1 /* EasyList_Czechoslovakia.zip in Resources */,
+				1D5BEF3D1BDA86A80003ABB1 /* EasyList_Dutch.zip in Resources */,
+				1D5BEF3E1BDA86A80003ABB1 /* EasyList_Germany.zip in Resources */,
+				1D5BEF3F1BDA86A80003ABB1 /* EasyList_Hebrew.zip in Resources */,
+				1D5BEF401BDA86A80003ABB1 /* EasyList_Italy.zip in Resources */,
+				1D5BEF411BDA86A80003ABB1 /* EasyList_Lithuania.zip in Resources */,
+				1D5BEF421BDA86A80003ABB1 /* EasyList_Latvia.zip in Resources */,
+				1D5BEF431BDA86A80003ABB1 /* EasyList_Arabic.zip in Resources */,
+				1D5BEF4F1BDA8A430003ABB1 /* InfoPlist.strings in Resources */,
+				1D5BEF551BDA8B060003ABB1 /* Localizable.strings in Resources */,
+				1D5BEF441BDA86A80003ABB1 /* EasyList_France.zip in Resources */,
+				1D5BEF451BDA86A80003ABB1 /* EasyList_Romania.zip in Resources */,
+				1D5BEF461BDA86A80003ABB1 /* EasyList_Poland.zip in Resources */,
+				1D5BEF471BDA86A80003ABB1 /* EasyList_Iceland.zip in Resources */,
+				1D5BEF481BDA86A80003ABB1 /* EasyList_Spain.zip in Resources */,
+				1D5BEF491BDA86A80003ABB1 /* List_Japan.zip in Resources */,
+				1DAA1FF01BACBC6E000B1B75 /* LaunchScreen.storyboard in Resources */,
+				EAD1E2CE1BDA67AD0093DB38 /* adblock2.storyboard in Resources */,
+				1DAA20091BACBD00000B1B75 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DAA1FFF1BACBC90000B1B75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D5BEF591BDA8E0B0003ABB1 /* contentblock2.entitlements in Resources */,
+				1D5BEF331BDA86680003ABB1 /* FilterList.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13497A2D4D6A895D1AEF9DC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		15A7A7B2242FF7375B580EF0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		314911744B7321051ADC821C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4B10A70C78A0D709ADE0F0DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-adblock/Pods-adblock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6537A6AE0220C9FE7A531FB3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-contentblock2/Pods-contentblock2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E4903C45F480FD5FD8A38AF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-contentblock/Pods-contentblock-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B276B3F73A86D332C584FCB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9CD29FD07779CA0A3A481CDC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-adblock/Pods-adblock-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B42B9124DBABAE82AB16DC63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-contentblock/Pods-contentblock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEF3C731F2F822C0C0E6C695 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AdBlocker/Pods-AdBlocker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDB6965698B7FA2023D23FB2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AdBlocker/Pods-AdBlocker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE0CD59E3D7ED22A5EA69303 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-contentblock2/Pods-contentblock2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D56615F1BA311E5007B91A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAD1E2C51BDA499E0093DB38 /* FeaturesViewController.swift in Sources */,
+				EA76C11F1BC3FA5000975F08 /* WhitelistViewController.swift in Sources */,
+				D9B9FD231BBEF3B900296BF0 /* FilterList.swift in Sources */,
+				EA85C5271BBE8949005C9F8D /* FilterListManager.swift in Sources */,
+				1DFCDCDD1BAB627C0066F36F /* DismissSegue.swift in Sources */,
+				1D38A8CC1BD7CFD800F36F0D /* RAMPaperSwitch.swift in Sources */,
+				1DFCDCE21BAB66F50066F36F /* InstructionViewController.swift in Sources */,
+				1DFCDCE01BAB63940066F36F /* PresentWithoutAnimationSegue.swift in Sources */,
+				EAD1E2C81BDA49B50093DB38 /* FeatureCell.swift in Sources */,
+				1DFCDCE41BAB699E0066F36F /* InstructionView.swift in Sources */,
+				EAC6DBC91BC6820400A3D66A /* WhitelistRuleViewController.swift in Sources */,
+				EA3448E41BCD5BB800737784 /* RegionsViewController.swift in Sources */,
+				1D5661691BA311E5007B91A1 /* RootViewController.swift in Sources */,
+				1D5661671BA311E5007B91A1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D5661941BA3121E007B91A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D74A9921BAD4B0200377CBA /* ActionRequestHandler.swift in Sources */,
+				EAD1E2CA1BDA53B00093DB38 /* FilterListManager.swift in Sources */,
+				EA0812811BBF1D5D001904E9 /* FilterList.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DAA1FE51BACBC6E000B1B75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAD1E2C61BDA499E0093DB38 /* FeaturesViewController.swift in Sources */,
+				EA6359241BD93BD100843BCE /* WhitelistViewController.swift in Sources */,
+				EA6359251BD93BD300843BCE /* WhitelistRuleViewController.swift in Sources */,
+				EA63591C1BD9346C00843BCE /* RAMPaperSwitch.swift in Sources */,
+				D9B9FD241BBEF3B900296BF0 /* FilterList.swift in Sources */,
+				EA6359231BD93BCC00843BCE /* RegionsViewController.swift in Sources */,
+				EA85C5281BBE8949005C9F8D /* FilterListManager.swift in Sources */,
+				EA63591B1BD9346200843BCE /* RootViewController.swift in Sources */,
+				EAD1E2C91BDA49B50093DB38 /* FeatureCell.swift in Sources */,
+				1DAA1FE71BACBC6E000B1B75 /* DismissSegue.swift in Sources */,
+				1DAA1FE81BACBC6E000B1B75 /* InstructionViewController.swift in Sources */,
+				1DAA1FEA1BACBC6E000B1B75 /* PresentWithoutAnimationSegue.swift in Sources */,
+				1DAA1FEB1BACBC6E000B1B75 /* InstructionView.swift in Sources */,
+				1DAA1FED1BACBC6E000B1B75 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DAA1FFC1BACBC90000B1B75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DAA20131BACBF36000B1B75 /* ActionRequestHandler.swift in Sources */,
+				EA6359221BD93BC600843BCE /* FilterListManager.swift in Sources */,
+				EA6359211BD93BBD00843BCE /* FilterList.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D5661A01BA3121E007B91A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D5661971BA3121E007B91A1 /* contentblock */;
+			targetProxy = 1D56619F1BA3121E007B91A1 /* PBXContainerItemProxy */;
+		};
+		1DAA200D1BACBE19000B1B75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DAA1FFB1BACBC90000B1B75 /* contentblock2 */;
+			targetProxy = 1DAA200C1BACBE19000B1B75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1D3FC5841BAC64EC0089597A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D3FC5871BAC650F0089597A /* ru */,
+				1D74A9911BAD483600377CBA /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		1D56616A1BA311E5007B91A1 /* adblock.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D74A98E1BAD47C200377CBA /* Base */,
+			);
+			name = adblock.storyboard;
+			sourceTree = "<group>";
+		};
+		1D56616F1BA311E5007B91A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D5661701BA311E5007B91A1 /* Base */,
+				1D3FC5861BAC650F0089597A /* ru */,
+				1D74A9891BAD454500377CBA /* en */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1D5BEF511BDA8A430003ABB1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D5BEF501BDA8A430003ABB1 /* en */,
+				1D5BEF521BDA8A450003ABB1 /* ru */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1D5BEF571BDA8B060003ABB1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D5BEF561BDA8B060003ABB1 /* ru */,
+				1D5BEF581BDA8B090003ABB1 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		1D9ABB791BC4207B008E3603 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D9ABB781BC4207B008E3603 /* ru */,
+				1D9ABB7B1BC4207F008E3603 /* en */,
+				EA3449131BD14EFE00737784 /* zh-Hans */,
+				EA3449171BD14FE500737784 /* he */,
+				EA3449181BD1517000737784 /* cs */,
+				EA3449191BD1518000737784 /* nl */,
+				EA34491E1BD151F600737784 /* lt */,
+				EA34491F1BD1520A00737784 /* ar */,
+				EA3449201BD1522500737784 /* fr */,
+				EA3449211BD1528100737784 /* ro */,
+				EA3449221BD152A100737784 /* pl */,
+				EA3449231BD152CA00737784 /* is */,
+				EA3449241BD152DB00737784 /* es */,
+				EA3449251BD152E400737784 /* ja */,
+				EA3449261BD152F600737784 /* sk */,
+				EA3449271BD1538100737784 /* id */,
+				EA3449281BD153B400737784 /* bg */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EAD1E2CB1BDA67AD0093DB38 /* adblock2.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAD1E2CC1BDA67AD0093DB38 /* Base */,
+			);
+			name = adblock2.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D5661891BA311E5007B91A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D56618A1BA311E5007B91A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D56618C1BA311E5007B91A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B14A86A5F6A6229F4C51A6F /* Pods-adblock.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = arm64;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = adblock/adblock.entitlements;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = adblock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.bukharskiy.adblock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1D56618D1BA311E5007B91A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06F60A5FF375BA914A083CCE /* Pods-adblock.release.xcconfig */;
+			buildSettings = {
+				ARCHS = arm64;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = adblock/adblock.entitlements;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = adblock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.bukharskiy.adblock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+			};
+			name = Release;
+		};
+		1D5661A31BA3121E007B91A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9915D14F2DAAB6C79D17718A /* Pods-contentblock.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = arm64;
+				CODE_SIGN_ENTITLEMENTS = contentblock/contentblock.entitlements;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = contentblock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.bukharskiy.adblock.contentblock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1D5661A41BA3121E007B91A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 872A55EF8EE7EF70F35F0081 /* Pods-contentblock.release.xcconfig */;
+			buildSettings = {
+				ARCHS = arm64;
+				CODE_SIGN_ENTITLEMENTS = contentblock/contentblock.entitlements;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = contentblock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.bukharskiy.adblock.contentblock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1DAA1FF71BACBC6E000B1B75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18D1E7140665401438A04C82 /* Pods-AdBlocker.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = arm64;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = adblock/adblocker2/adblock2.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = "adblock copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adblocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		1DAA1FF81BACBC6E000B1B75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45936C9D3AFD0A76E4FEC399 /* Pods-AdBlocker.release.xcconfig */;
+			buildSettings = {
+				ARCHS = arm64;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = adblock/adblocker2/adblock2.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = "adblock copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adblocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		1DAA20031BACBC90000B1B75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0CE85C48853AE8B062A2AA0 /* Pods-contentblock2.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = arm64;
+				CODE_SIGN_ENTITLEMENTS = contentblock/contentblock2/contentblock2.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = "contentblock copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adblocker.contentblock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1DAA20041BACBC90000B1B75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 098AA5B24B060CE2F05410DE /* Pods-contentblock2.release.xcconfig */;
+			buildSettings = {
+				ARCHS = arm64;
+				CODE_SIGN_ENTITLEMENTS = contentblock/contentblock2/contentblock2.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = "contentblock copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adblocker.contentblock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D56615E1BA311E5007B91A1 /* Build configuration list for PBXProject "adblock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D5661891BA311E5007B91A1 /* Debug */,
+				1D56618A1BA311E5007B91A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D56618B1BA311E5007B91A1 /* Build configuration list for PBXNativeTarget "adblock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D56618C1BA311E5007B91A1 /* Debug */,
+				1D56618D1BA311E5007B91A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D5661A21BA3121E007B91A1 /* Build configuration list for PBXNativeTarget "contentblock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D5661A31BA3121E007B91A1 /* Debug */,
+				1D5661A41BA3121E007B91A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DAA1FF61BACBC6E000B1B75 /* Build configuration list for PBXNativeTarget "AdBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DAA1FF71BACBC6E000B1B75 /* Debug */,
+				1DAA1FF81BACBC6E000B1B75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DAA20021BACBC90000B1B75 /* Build configuration list for PBXNativeTarget "contentblock2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DAA20031BACBC90000B1B75 /* Debug */,
+				1DAA20041BACBC90000B1B75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1D56615B1BA311E5007B91A1 /* Project object */;
+}
